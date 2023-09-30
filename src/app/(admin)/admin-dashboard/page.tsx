@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 type Props = {};
 
 const AdminDashboardPage = (props: Props) => {
-	return (
-		<div>
-			<>AdminDashboardPage</>
-		</div>
-	);
+  return (
+    <div>
+      <>AdminDashboardPage</>
+    </div>
+  );
 };
 
 export default AdminDashboardPage;

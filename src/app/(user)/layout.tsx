@@ -1,14 +1,14 @@
 export default function DashboardLayout({
-	children, // will be a page or nested layout
+  children, // will be a page or nested layout
 }: {
-	children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-	return (
-		<section>
-			{/* Include shared UI here e.g. a header or sidebar */}
-			<nav>Dash</nav>
+  return (
+    <section>
+      {/* Include shared UI here e.g. a header or sidebar */}
+      <nav>Dash</nav>
 
-			{children}
-		</section>
-	);
+      {children}
+    </section>
+  );
 }

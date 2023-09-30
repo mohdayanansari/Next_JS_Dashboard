@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 type Props = {};
 
 const InvoicesPage = (props: Props) => {
-	return <div>InvoicesPage</div>;
+  return <div>InvoicesPage</div>;
 };
 
 export default InvoicesPage;

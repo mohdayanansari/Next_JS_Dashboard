@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 type Props = {};
 
 const page = (props: Props) => {
-	return (
-		<div>
-			<>Home Page</>
-		</div>
-	);
+  return (
+    <div>
+      <>Home Page</>
+    </div>
+  );
 };
 
 export default page;
