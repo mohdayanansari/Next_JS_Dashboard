@@ -1,3 +1,5 @@
+import SidebarContextProvider from "@/contexts/sidebar-context";
+import ThemeContextProvider from "@/contexts/theme-context";
 import "@/styles/styles.scss";
 import "@/styles/tailwind.css";
 import { Metadata } from "next";
@@ -15,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <ThemeContextProvider>
+          <SidebarContextProvider>{children}</SidebarContextProvider>
+        </ThemeContextProvider>
+      </body>
     </html>
   );
 }

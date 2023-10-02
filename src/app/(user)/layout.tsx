@@ -1,16 +1,15 @@
+import { Sidebar } from "@/components/index";
 import React from "react";
 
 export default function DashboardLayout({
-  children, // will be a page or nested layout
+  children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <section>
-      {/* Include shared UI here e.g. a header or sidebar */}
-      <nav>Dash</nav>
-
+    <main className={`flex bg-app-dark-1`}>
+      <Sidebar />
       {children}
-    </section>
+    </main>
   );
 }

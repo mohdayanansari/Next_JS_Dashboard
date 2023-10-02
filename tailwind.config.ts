@@ -9,17 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#050816",
-        secondary: "#aaa6c3",
-        tertiary: "#151030",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3",
-        "logo-redL": "#FF0000",
-        "logo-redD": "#9C0000",
+        "app-dark-1": "#0D0B21",
+        "app-dark-2": "#15132B",
+        "app-primary": "#211A75",
+        "app-secondary": "#6418C3",
+        "app-tertiary": "#7879F1",
+        "app-accent-1": "#5ECFFF",
+        "app-accent-2": "#E328AF",
+        "app-accent-3": "#464366",
+        "app-gray-1": "#A5A5A5",
+        "app-gray-2": "#C4C4C4",
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
+        sidebar: "18px 4px 35px 0px rgba(0, 0, 0, 0.15)",
+        "large-card": "0px 4px 4px 0px rgba(0, 0, 0, 0.04)",
       },
       screens: {
         xs: "450px",
@@ -31,6 +35,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
 export default config;

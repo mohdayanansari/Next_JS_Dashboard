@@ -1,9 +1,18 @@
-import React from "react";
+import { Banner, DashboardHeader } from "@/components/index";
 
 type Props = {};
 
 const EmailPage = (props: Props) => {
-  return <div>EmailPage</div>;
+  return (
+    <section className={`flex-1`}>
+      {/* Header */}
+      <DashboardHeader />
+      {/* main */}
+      <section className=" p-[10px] lg:p-[20px] dashboard-scroll-settings">
+        <Banner />
+      </section>
+    </section>
+  );
 };
 
 export default EmailPage;

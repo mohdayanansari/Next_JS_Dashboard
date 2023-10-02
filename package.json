@@ -2,6 +2,11 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Mohd Ayan Ansari",
+    "url": "https://www.mohdayanansari.tech",
+    "email": "mohdayanansari@icloud.com"
+  },
   "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.5.1",
@@ -18,10 +23,14 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "framer-motion": "^10.16.4",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "sass": "^1.68.0"
+    "react-icons": "^4.11.0",
+    "react-responsive": "^9.0.2",
+    "sass": "^1.68.0",
+    "styled-components": "^6.0.8"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.22.20",
@@ -48,6 +57,7 @@
     "postcss": "latest",
     "prettier": "^3.0.3",
     "storybook": "^7.4.5",
+    "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "latest",
     "typescript": "latest"
   },
